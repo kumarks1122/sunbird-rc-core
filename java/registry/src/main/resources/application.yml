@@ -120,8 +120,8 @@ database:
       #     ** Example - cassandra - jdbc:cassandra://localhost:9160/yourdb
       uri: ${connectionInfo_uri:jdbc:postgresql://localhost:5432/registry}
 
-      username: ${connectionInfo_username:postgres}
-      password: ${connectionInfo_password:postgres}
+      username: ${connectionInfo_username:lernuser}
+      password: ${connectionInfo_password:lern@123}
       maxPoolSize: ${connectionInfo_maxPoolSize:100}
 
       # Any other shard information follows...
@@ -195,12 +195,12 @@ audit:
 
 keycloak:
   #publicKey:  ${sunbird_sso_publickey:pk}
-  auth-server-url: ${sunbird_sso_url:https://localhost:8888/auth}
+  auth-server-url: ${sunbird_sso_url:http://localhost:8080/auth}
   realm: ${sunbird_sso_realm:sunbird-rc}
   resource: ${sunbird_sso_client_id:client}
 keycloak-admin:
   client-id: ${sunbird_sso_admin_client_id:admin-api}
-  client-secret: ${sunbird_sso_admin_client_secret:client_secret}
+  client-secret: ${sunbird_sso_admin_client_secret:975b2c8a-3fb8-4061-9495-7fd570250c0a}
 keycloak-user:
   set-default-password: ${sunbird_keycloak_user_set_password:false}
   default-password: ${sunbird_keycloak_user_password:abcd@123}

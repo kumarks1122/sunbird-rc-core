@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "BloodDonor": {
+      "$ref": "#/definitions/BloodDonor"
+    }
+  },
+  "required": [
+    "BloodDonor"
+  ],
+  "title": "BloodDonor",
+  "definitions": {
+    "BloodDonor": {
+      "$id": "#/properties/BloodDonor",
+      "type": "object",
+      "title": "The BloodDonor Schema",
+      "required": [
+        "name",
+        "contact",
+        "bloodGroup",
+        "rhFactor",
+        "email"
+      ],
+      "properties": {
+        "bloodGroup": {
+          "type": "string",
+          "enum": ["A", "B", "AB", "O"],
+          "title": "Blood Group"
+        },
+        "rhFactor": {
+          "type": "string",
+          "enum": ["+", "-"],
+          "title": "RH Factor"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "contact": {
+          "type": "string",
+          "title": "contact"
+        },
+        "note": {
+          "type": "string",
+          "title": "Note"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "title": "Email"
+        }
+      }
+    }
+  },
+  "_osConfig": {
+    "uniqueIndexFields": ["contact"],
+    "subjectJsonPath": "contact",
+    "ownershipAttributes": [
+      {
+        "email": "/email",
+        "mobile": "/contact",
+        "userId": "/email"
+      }
+    ]
+  }
+
+}

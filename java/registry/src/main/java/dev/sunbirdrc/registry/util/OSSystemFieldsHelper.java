@@ -71,6 +71,7 @@ public class OSSystemFieldsHelper {
                     }
                     break;
                 case osUpdatedAt:
+
                     OSSystemFields.osUpdatedAt.updatedAt(node, timeStamp);
                     break;
                 case osUpdatedBy:
