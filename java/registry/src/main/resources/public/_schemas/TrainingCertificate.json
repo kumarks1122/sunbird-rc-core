@@ -69,6 +69,6 @@
         ], 
         "systemFields": ["osCreatedAt", "osUpdatedAt", "osCreatedBy", "osUpdatedBy"],
         "enableLogin": false,
-        "credentialTemplate": "java/registry/src/main/resources/public/_schemas/templates/credTemplate.json"
+        "credentialTemplate": "http://localhost:8081/api/v1/templates/credTemplate.json"
     }
 }

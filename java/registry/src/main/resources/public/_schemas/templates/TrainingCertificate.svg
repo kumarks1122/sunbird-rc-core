@@ -266,7 +266,7 @@ text {letter-spacing:normal;font-family:'Noto Sans', 'Noto Sans Devanagari', 'No
 <text class="cert-title" id="certTitle" x="420.215465" y="230" xml:space="preserve">Joey Tribianni </text>
 <g transform="translate(0,-10)">
 <text class="para firstline" x="420.942785" y="289.334146" id="svg_96" xml:space="preserve">This is to certify that</text>
-<text class="para secondline svgResizableText" x="420.949226" y="322.262614" id="svg_97" xml:space="preserve" font-size="18px">{{credentialSubject.name}}</text>
+<text class="para secondline svgResizableText" x="420.949226" y="322.262614" id="svg_97" xml:space="preserve" font-size="18px">{{credentialSubject.recipientName}}</text>
 <text class="para thirdline" x="420.949988" y="353.969933" id="svg_98" xml:space="preserve">has successfully completed the course</text>
 <text class="para fourthline svgResizableText" x="420.949988" y="389.33579" id="svg_99" font-size="18px" text-anchor="middle" xml:space="preserve">{{credentialSubject.trainingName}}</text>
 
