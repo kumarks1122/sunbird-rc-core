@@ -9,6 +9,7 @@
   ],
 "id":"did:sunbird:{{osid}}",
 "issuanceDate": "{{osCreatedAt}}",
+"issuedDate": "{{issuedDate}}",
 "credentialSubject": {
 "type":"{{certificateLabel}}",
 "recipientName": "{{recipient.name}}",
